@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Blank_Education</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_main_education">教学</string>
+    <string name="button_main_me">我的</string>
+    <string name="button_main_life">生活</string>
+    <string name="life_title">生活</string>
+    <string name="me_title">我的</string>
+    <string name="educate_title">教学</string>
+    <string name="login_text">请登录</string>
+    <string name="list_question">问题反馈</string>
+    <string name="list_about">关于我们</string>
+    <string name="list_delete">注销用户</string>
+</resources>

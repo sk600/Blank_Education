@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#C6E2FF"
+        android:gravity="center"
+        android:id="@+id/linearlayout_main_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:id="@+id/textview_main_title_text"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below = "@+id/linearlayout_main_title"
+        android:id="@+id/convenientBannerContainer">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below = "@+id/linearlayout_main_title"
+            app:canLoop="true" />
+
+    </FrameLayout>
+
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/radiogroup_main_bottom"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/radiobutton_main_educate"
+            android:layout_weight="1"
+            android:text="@string/button_main_education"
+            android:textSize="18dp"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/education_select"
+            style="@style/navigation_bottom_radiobutton"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/radiobutton_main_life"
+            android:layout_weight="1"
+            android:text="@string/button_main_life"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/life_select"
+            style="@style/navigation_bottom_radiobutton"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/radiobutton_main_me"
+            android:layout_weight="1"
+            android:text="@string/button_main_me"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/me_select"
+            style="@style/navigation_bottom_radiobutton"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/convenientBannerContainer"
+        android:background="@color/white"
+        android:layout_above="@id/radiogroup_main_bottom">
+    </FrameLayout>
+
+
+</RelativeLayout>
