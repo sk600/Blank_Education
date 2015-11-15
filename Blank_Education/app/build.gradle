@@ -34,4 +34,5 @@ dependencies {
     compile files('httpmime-4.1.2.jar')
     compile 'com.specyci:residemenu:1.6+'
     compile 'de.hdodenhof:circleimageview:2.0.0'
+
 }

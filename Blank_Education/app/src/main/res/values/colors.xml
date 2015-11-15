@@ -3,5 +3,7 @@
     <color name="white">#ffffff</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="trans_gray">#55dddddd</color>
 
 </resources>

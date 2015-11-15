@@ -13,4 +13,9 @@
     <string name="list_question">问题反馈</string>
     <string name="list_about">关于我们</string>
     <string name="list_delete">注销用户</string>
+    <string name="content_circut">电路报修</string>
+    <string name="content_lamp">灯具报修</string>
+    <string name="pipe_content">水管报修</string>
+    <string name="door_content">门窗报修</string>
+    <string name="content_else">其他报修</string>
 </resources>

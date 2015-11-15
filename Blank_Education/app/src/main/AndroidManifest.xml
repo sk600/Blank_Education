@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -29,6 +30,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".CallActivity"
+            android:label="Blank_CallActivity"/>
+
+        <activity android:name=".CallNextActivity"
+            android:label="Blank_CallNextActivity"
+            android:theme="@style/custom"/>
+
     </application>
 
 </manifest>
