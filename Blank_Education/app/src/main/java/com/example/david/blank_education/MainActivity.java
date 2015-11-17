@@ -1,13 +1,20 @@
 package com.example.david.blank_education;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.bigkoo.convenientbanner.CBViewHolderCreator;
 import com.bigkoo.convenientbanner.ConvenientBanner;
@@ -21,6 +28,8 @@ import com.special.ResideMenu.ResideMenuItem;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import cn.bmob.v3.Bmob;
 
@@ -32,10 +41,24 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private RadioGroup radioGroup;
     private RadioButton education, life, me;
     private ResideMenu  resideMenu;
+    private String ACTION_NAME = "com.example.david.blank_education.broadcast.action";
+    BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Intent intent2 = new Intent(MainActivity.this, MainActivity.class);
+            MainActivity.this.finish();
+            startActivity(intent2);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        IntentFilter myIntentFilter = new IntentFilter();
+        myIntentFilter.addAction(ACTION_NAME);
+        registerReceiver(receiver, myIntentFilter);
+
         setContentView(R.layout.activity_main);
         if( savedInstanceState == null )
             changeFragment(new EducateFragment());
@@ -148,6 +171,56 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         return resideMenu.dispatchTouchEvent(ev);
     }
 
+    protected void onActivityResult(int requestCode, int resultCode,Intent data)
+    {
+        switch(resultCode)
+        {
+            case RESULT_OK:
+                if(requestCode == 0) {
+
+                }else{
+                    Uri originalUri = data.getData();
+                    Intent intent = new Intent(MainActivity.this, HeadUploadActivity.class);
+                    intent.putExtra("Uri", originalUri.toString());
+                    startActivity(intent);
+                }
+                break;
+            default:
+                break;
+        }
+
+    }
+
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+        if(keyCode == KeyEvent.KEYCODE_BACK)
+        {
+            exitBy2Click();
+        }
+        return false;
+    }
+
+    private static Boolean isExit = false;
+
+    private void exitBy2Click() {
+        Timer tExit = null;
+        if (isExit == false) {
+            isExit = true;
+            Toast.makeText(this, getString(R.string.double_click_back), Toast.LENGTH_SHORT).show();
+            tExit = new Timer();
+            tExit.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    isExit = false;
+                }
+            }, 2000);
+
+        } else {
+            finish();
+            System.exit(0);
+        }
+    }
 
 
 }

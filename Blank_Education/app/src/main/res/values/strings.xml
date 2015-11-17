@@ -18,4 +18,22 @@
     <string name="pipe_content">水管报修</string>
     <string name="door_content">门窗报修</string>
     <string name="content_else">其他报修</string>
+    <string name="click_here_regist">点击此处注册</string>
+    <string name="please_insert_pwd">请输入密码</string>
+    <string name="please_insert_username">请输入用户名</string>
+    <string name="login_sucess">登陆成功</string>
+    <string name="login_failed">登陆失败</string>
+    <string name="please_check_pwd">请查对密码</string>
+    <string name="please_insert_stunum">请输入学号</string>
+    <string name="content_uncomplete">内容未填写完整</string>
+    <string name="unmatch_pwd">密码不正确</string>
+    <string name="wrong_stu_num">学号不正确</string>
+    <string name="regist_success">注册成功</string>
+    <string name="button_login">登陆</string>
+    <string name="double_click_back">再按一次退出</string>
+    <string name="upload_sucess">上传成功</string>
+    <string name="Complete">完成</string>
+    <string name="Error">错误</string>
+    <string name="upload_head">上传头像</string>
+    <string name="upload_failed">上传失败</string>
 </resources>

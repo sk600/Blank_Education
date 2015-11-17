@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cn.liang.paul.intelligent.RegistActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:hint="@string/please_insert_username"
+        android:id="@+id/txt_regist_user_name"
+        android:layout_marginTop="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/txt_regist_password"
+        android:layout_alignStart="@+id/txt_regist_password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/please_insert_pwd"
+        android:id="@+id/txt_regist_password"
+        android:layout_below="@+id/txt_regist_user_name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@+id/txt_regist_stu_pass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/please_check_pwd"
+        android:id="@+id/txt_regist_password_confirm"
+        android:layout_below="@+id/txt_regist_password"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/please_insert_stunum"
+        android:id="@+id/txt_regist_stu_num"
+        android:layout_below="@+id/txt_regist_password_confirm"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/please_insert_stunum"
+        android:id="@+id/txt_regist_stu_pass"
+        android:layout_below="@+id/txt_regist_stu_num"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
