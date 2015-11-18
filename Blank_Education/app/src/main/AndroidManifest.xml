@@ -55,6 +55,8 @@
             android:label="Blank_HeartSayingsDetail"/>
         <activity android:name=".UploadHeartSayingActivity"
             android:label="Blank_UploadHeartSaying"/>
+        <activity android:name=".HfutHistoryActivity"
+            android:label="Blank_HfutHistory"/>
 
     </application>
 

@@ -46,4 +46,18 @@
     <string name="please_login">请先登录</string>
     <string name="watch_it">特别关注</string>
     <string name="heartsayings_title_text">心里话</string>
+    <string name="history_text_1">1985年10月19日刘少奇视察我校</string>
+    <string name="history_text_2">1960年5月11日董必武视察我校</string>
+    <string name="history_text_3">1960年6月27日朱德视察我校</string>
+    <string name="history_text_4">1960年7月23日邓小平视察我校</string>
+    <string name="history_text_5">1960年10月我校被指定为重点大学</string>
+    <string name="history_text_6">1961年11月4日陈毅视察我校</string>
+    <string name="history_text_7">我校屯溪路校区原食堂遗址</string>
+    <string name="history_text_8">1961年11月4日陈毅为我校师生作形势报告</string>
+    <string name="history_text_9">董必武参观我校科技成果展览馆</string>
+    <string name="history_text_10">这是1959年时的东教学楼</string>
+    <string name="history_text_11">1958年10月19日刘少奇视察我校</string>
+    <string name="history_text_12">1960年7月23日邓小平视察我校</string>
+    <string name="name_di">第</string>
+    <string name="name_ye">页</string>
 </resources>
