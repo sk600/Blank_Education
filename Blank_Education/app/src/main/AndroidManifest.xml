@@ -49,6 +49,12 @@
             android:label="Blank_Regist"/>
         <activity android:name=".HeadUploadActivity"
             android:label="Blank_Headupload"/>
+        <activity android:name=".HeartSayingsActivity"
+            android:label="Blank_HeartSayings"/>
+        <activity android:name=".HeartSayingsDetailActivity"
+            android:label="Blank_HeartSayingsDetail"/>
+        <activity android:name=".UploadHeartSayingActivity"
+            android:label="Blank_UploadHeartSaying"/>
 
     </application>
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/textview_heartsayingsdetail_title"
+            android:text=""
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textSize="40dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/textview_heartsayingsdetail_content"
+            android:gravity="top"
+            android:textSize="23dp"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageview_heartsayingsdetail_listview_well_pic"
+                    android:src="@drawable/good_pic"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="30dp"
+                    android:id="@+id/textview_heartsayingsdetail_listview_well_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageview_heartsayingsdetail_listview_bad_pic"
+                    android:src="@drawable/bad_pic"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="30dp"
+                    android:id="@+id/textview_heartsayingsdetail_listview_bad_text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <medusa.theone.waterdroplistview.view.WaterDropListView
+        android:id="@+id/waterdrop_listview_heartsayingsdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </medusa.theone.waterdroplistview.view.WaterDropListView>
+
+
+</LinearLayout>

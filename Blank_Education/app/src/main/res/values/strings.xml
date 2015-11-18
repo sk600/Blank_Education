@@ -36,4 +36,14 @@
     <string name="Error">错误</string>
     <string name="upload_head">上传头像</string>
     <string name="upload_failed">上传失败</string>
+    <string name="load_failed">加载失败</string>
+    <string name="no_more">没有更多了</string>
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+    <string name="upload">上传</string>
+    <string name="upload_content_text">请输入内容</string>
+    <string name="upload_title_text">请输入标题</string>
+    <string name="please_login">请先登录</string>
+    <string name="watch_it">特别关注</string>
+    <string name="heartsayings_title_text">心里话</string>
 </resources>

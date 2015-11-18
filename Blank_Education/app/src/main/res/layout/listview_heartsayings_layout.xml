@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_listview_item"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:padding="3dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="klkjlkjl"
+            android:textSize="25dp"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:id="@+id/textview_heartsayings_listview"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/linearlayout_heartingsayings_well"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageview_heartsayings_listview_well_pic"
+                    android:src="@drawable/good_pic"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="12dp"
+                    android:id="@+id/textview_heartsayings_listview_well_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/linearlayout_heartingsayings_well"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageview_heartsayings_listview_bad_pic"
+                    android:src="@drawable/bad_pic"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="12dp"
+                    android:id="@+id/textview_heartsayings_listview_bad_text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:gravity="right|center"
+                android:layout_alignParentRight="true"
+                android:text="@string/watch_it"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

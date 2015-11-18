@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textview_heartsayingsdetail_listview_recall_author"
+        android:text="sdlfksjd"
+        android:textSize="20dp"
+        android:gravity="top"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/textview_heartsayingsdetail_listview_recall_content"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

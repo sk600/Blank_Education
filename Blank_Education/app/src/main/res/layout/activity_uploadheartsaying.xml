@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:hint="@string/upload_title_text"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/edittext_uploadheartsaying_title"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_below="@+id/edittext_uploadheartsaying_title"
+        android:id="@+id/edittext_uploadheartsaying_content"
+        android:hint="@string/upload_content_text"
+        android:gravity="top"
+        android:textSize="25dp"/>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cpb_textComplete="@string/Complete"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="@string/upload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
